@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="342.0" prefWidth="475.0" style="-fx-background-color: linear-gradient(to left, #649173, #dbd5a4);" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RequestController">
+   <children>
+      <Label alignment="CENTER" layoutY="20.0" prefHeight="17.0" prefWidth="475.0" text="Send Request">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Pane layoutX="17.0" layoutY="62.0" prefHeight="224.0" prefWidth="233.0" style="-fx-background-color: grey;">
+         <children>
+            <Label layoutX="8.0" layoutY="21.0" prefHeight="17.0" prefWidth="39.0" text="Tiêu đề" textFill="WHITE" />
+            <TextField fx:id="inputtieude" layoutX="63.0" layoutY="17.0" prefHeight="38.0" prefWidth="149.0" promptText="tiêu đề" />
+            <Label layoutX="8.0" layoutY="68.0" text="Nội dung" textFill="WHITE" />
+            <Label layoutX="8.0" layoutY="184.0" text="Ngày gửi" textFill="WHITE" />
+            <DatePicker fx:id="inputngaygui" layoutX="65.0" layoutY="180.0" prefHeight="25.0" prefWidth="149.0" promptText="ngày gửi" />
+            <ScrollPane layoutX="64.0" layoutY="68.0" prefHeight="97.0" prefWidth="150.0">
+               <content>
+                  <TextArea fx:id="inputnoidung" prefHeight="200.0" prefWidth="130.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+      <Pane layoutX="261.0" layoutY="62.0" prefHeight="224.0" prefWidth="200.0" style="-fx-background-color: grey;">
+         <children>
+            <ComboBox fx:id="comboboxmadouutien" layoutX="25.0" layoutY="24.0" prefWidth="150.0" promptText="mã độ ưu tiên" />
+            <Button fx:id="buttonsend" layoutX="64.0" layoutY="130.0" mnemonicParsing="false" onAction="#buttonSendRequest" prefHeight="38.0" prefWidth="73.0" text="Send">
+               <font>
+                  <Font name=".VnAristote Medium" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</Pane>

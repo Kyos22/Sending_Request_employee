@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="342.0" prefWidth="475.0" style="-fx-background-color: linear-gradient(to left, #649173, #dbd5a4);" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MediaController">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="225.0" fitWidth="375.0" layoutX="49.0" layoutY="59.0" nodeOrientation="INHERIT" AnchorPane.leftAnchor="49.0" />
+      <Label alignment="CENTER" layoutX="-4.0" layoutY="1.0" prefHeight="37.0" prefWidth="481.0" text="INTRODUCE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="playButton" layoutX="213.0" layoutY="289.0" mnemonicParsing="false" onAction="#playMedia" prefHeight="35.0" prefWidth="43.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/play-circle-fill.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="resetButton" layoutX="268.0" layoutY="290.0" mnemonicParsing="false" onAction="#resetMedia" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/loop-left-line.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="pauseButton" layoutX="156.0" layoutY="288.0" mnemonicParsing="false" onAction="#pauseMedia" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/pause-circle-line.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

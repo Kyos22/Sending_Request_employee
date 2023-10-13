@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="342.0" prefWidth="475.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Pane_historyController">
+   <children>
+      <VBox prefHeight="342.0" prefWidth="475.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="55.0" prefWidth="480.0" style="-fx-background-color: linear-gradient(to left, #649173, #dbd5a4);" text="Request Table">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ScrollPane prefHeight="289.0" prefWidth="475.0">
+               <content>
+                  <TableView fx:id="paneRequestTable" prefHeight="290.0" prefWidth="460.0">
+                    <columns>
+                      <TableColumn fx:id="colId" prefWidth="35.0" text="id" />
+                      <TableColumn fx:id="colTieude" minWidth="0.0" prefWidth="67.0" text="Tieu de" />
+                        <TableColumn fx:id="colNoidung" prefWidth="96.0" text="noi dung" />
+                        <TableColumn fx:id="colNgaygui" prefWidth="77.0" text="ngày gửi" />
+                        <TableColumn fx:id="colDouutien" prefWidth="69.0" text="độ ưu tiên" />
+                        <TableColumn fx:id="colId_nvgui" prefWidth="57.0" text="id_nvgui" />
+                        <TableColumn fx:id="colId_nvxuly" prefWidth="64.0" text="id_nvxuly" />
+                    </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</Pane>
