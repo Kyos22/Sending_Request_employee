@@ -13,6 +13,7 @@ public class EmailController {
 
     @FXML
     private Button buttonsend;
+   
 
     @FXML
     private TextField jTextFieldSubject;
@@ -40,6 +41,7 @@ public class EmailController {
 			Alert alert = new Alert(AlertType.WARNING);
 			alert.setTitle("Sending failed");
 			alert.show();
+			System.out.println("");
 		}
     }
 
