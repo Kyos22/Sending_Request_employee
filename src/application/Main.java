@@ -12,7 +12,7 @@ public class Main extends Application {
 	@Override
 	public void start(Stage Stage) {
 		try {
-			
+			//test git
 			
 			Parent root = FXMLLoader.load(getClass().getResource("LoginPage.fxml"));
 			Scene scene = new Scene(root,600,400);
